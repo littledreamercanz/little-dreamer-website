@@ -10,6 +10,8 @@
   --aqua: #dceff2;
   --gold: #b98a3a;
   --gold-soft: #f4ead8;
+  --steel: #7f8fa3;
+  --graphite: #202a35;
   --shadow: 0 22px 70px rgba(7, 28, 51, 0.18);
 }
 
@@ -109,8 +111,8 @@ nav a[aria-current="page"] {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(90deg, rgba(7, 28, 51, 0.96) 0%, rgba(7, 28, 51, 0.88) 42%, rgba(7, 28, 51, 0.28) 100%),
-    url("assets/hero-accounting.png");
+    linear-gradient(90deg, rgba(5, 18, 32, 0.98) 0%, rgba(7, 28, 51, 0.9) 43%, rgba(7, 28, 51, 0.14) 100%),
+    url("assets/hero-boardroom.png");
   background-position: center;
   background-size: cover;
 }
@@ -169,8 +171,8 @@ p {
 h1 {
   max-width: 900px;
   margin-bottom: 22px;
-  font-size: clamp(3.2rem, 7.5vw, 6.7rem);
-  line-height: 0.98;
+  font-size: clamp(3.05rem, 6.7vw, 6.35rem);
+  line-height: 0.96;
   letter-spacing: 0;
 }
 
@@ -214,10 +216,11 @@ h2 {
 
 .hero-panel {
   padding: 26px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 8px;
   backdrop-filter: blur(14px);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
 }
 
 .hero-panel dl {
@@ -368,6 +371,70 @@ h2 {
   font-size: 0.92rem;
 }
 
+.advisory-band {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.95fr) minmax(0, 1fr);
+  gap: clamp(30px, 6vw, 82px);
+  align-items: stretch;
+  color: var(--white);
+  background: var(--navy);
+  overflow: hidden;
+}
+
+.advisory-media {
+  min-height: 520px;
+  background:
+    linear-gradient(180deg, rgba(7, 28, 51, 0.08), rgba(7, 28, 51, 0.34)),
+    url("assets/cfo-advisory.png") center / cover;
+  border-radius: 8px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+}
+
+.advisory-content {
+  display: grid;
+  align-content: center;
+}
+
+.advisory-content h2 {
+  max-width: 760px;
+  margin-bottom: 28px;
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1.06;
+}
+
+.metric-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.metric-grid div {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+}
+
+.metric-grid span {
+  display: block;
+  color: var(--gold);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.metric-grid strong {
+  display: block;
+  margin: 8px 0 6px;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.metric-grid p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.74);
+}
+
 .services-section {
   background: var(--white);
 }
@@ -413,7 +480,20 @@ blockquote {
 }
 
 .service-card {
+  position: relative;
+  overflow: hidden;
   background: #fbfcfd;
+}
+
+.service-card::after,
+.service-detail-grid a::after {
+  content: "";
+  position: absolute;
+  inset: auto 20px 18px auto;
+  width: 36px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.75;
 }
 
 a.service-card {
@@ -595,8 +675,8 @@ blockquote p {
   padding: clamp(110px, 12vw, 160px) clamp(20px, 5vw, 72px) 72px;
   color: var(--white);
   background:
-    linear-gradient(90deg, rgba(7, 28, 51, 0.98), rgba(16, 47, 78, 0.86)),
-    url("assets/hero-accounting.png") center / cover;
+    linear-gradient(90deg, rgba(7, 28, 51, 0.98), rgba(16, 47, 78, 0.78)),
+    url("assets/hero-boardroom.png") center / cover;
 }
 
 .sub-hero > div {
@@ -617,8 +697,8 @@ blockquote p {
 
 .pricing-hero {
   background:
-    linear-gradient(90deg, rgba(7, 28, 51, 0.98), rgba(7, 28, 51, 0.78)),
-    url("assets/advisory-desk.png") center / cover;
+    linear-gradient(90deg, rgba(7, 28, 51, 0.98), rgba(7, 28, 51, 0.76)),
+    url("assets/cfo-advisory.png") center / cover;
 }
 
 .service-detail-section {
@@ -633,6 +713,8 @@ blockquote p {
 
 .service-detail-grid article,
 .service-detail-grid a {
+  position: relative;
+  overflow: hidden;
   min-height: 310px;
   padding: 26px;
   background: var(--white);
@@ -678,8 +760,8 @@ blockquote p {
   align-items: center;
   color: var(--white);
   background:
-    radial-gradient(circle at 72% 32%, rgba(31, 102, 148, 0.42), transparent 34%),
-    linear-gradient(135deg, #061729, #0e2b47 54%, #071c33);
+    linear-gradient(115deg, rgba(5, 18, 32, 0.98), rgba(7, 28, 51, 0.92) 48%, rgba(32, 42, 53, 0.98)),
+    url("assets/hero-boardroom.png") center / cover;
   overflow: hidden;
 }
 
@@ -697,7 +779,24 @@ blockquote p {
 .css-3d-stage {
   position: relative;
   min-height: 520px;
-  perspective: 1100px;
+  perspective: 1280px;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.css-3d-stage::before {
+  content: "";
+  position: absolute;
+  inset: 12% 0 8%;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 44px 44px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transform: rotateX(64deg) rotateZ(-34deg);
+  transform-origin: center;
+  opacity: 0.46;
+  mask-image: linear-gradient(90deg, transparent, #000 16%, #000 84%, transparent);
 }
 
 .css-3d-stage.small {
@@ -710,6 +809,7 @@ blockquote p {
   transform-style: preserve-3d;
   transform: rotateX(58deg) rotateZ(-34deg);
   animation: dashboardFloat 7s ease-in-out infinite;
+  z-index: 1;
 }
 
 .glass-panel,
@@ -840,21 +940,21 @@ blockquote p {
   color: var(--white);
   background:
     linear-gradient(90deg, rgba(7, 28, 51, 0.98), rgba(7, 28, 51, 0.74)),
-    url("assets/hero-accounting.png") center / cover;
+    url("assets/hero-boardroom.png") center / cover;
   overflow: hidden;
 }
 
 .service-page-hero.gst-page {
   background:
     linear-gradient(90deg, rgba(7, 28, 51, 0.98), rgba(16, 47, 78, 0.76)),
-    url("assets/advisory-desk.png") center / cover;
+    url("assets/tax-workflow.png") center / cover;
 }
 
 .service-page-hero.cfo-page {
   background:
     radial-gradient(circle at 72% 34%, rgba(185, 138, 58, 0.28), transparent 32%),
     linear-gradient(90deg, rgba(7, 28, 51, 0.98), rgba(7, 28, 51, 0.72)),
-    url("assets/advisory-desk.png") center / cover;
+    url("assets/cfo-advisory.png") center / cover;
 }
 
 .service-page-copy {
@@ -924,7 +1024,9 @@ blockquote p {
 
 .insight-image {
   min-height: 560px;
-  background-image: url("assets/advisory-desk.png");
+  background-image:
+    linear-gradient(180deg, rgba(7, 28, 51, 0.05), rgba(7, 28, 51, 0.26)),
+    url("assets/tax-workflow.png");
   background-position: center;
   background-size: cover;
 }
@@ -1125,6 +1227,7 @@ footer p {
   .hero-inner,
   .about-grid,
   .market-section,
+  .advisory-band,
   .immersive-3d-section,
   .service-page-hero,
   .service-split,
@@ -1139,9 +1242,9 @@ footer p {
 
   .hero-media {
     background-image:
-      linear-gradient(180deg, rgba(7, 28, 51, 0.96) 0%, rgba(7, 28, 51, 0.88) 50%, rgba(7, 28, 51, 0.38) 100%),
-      url("assets/hero-accounting.png");
-    background-position: center right;
+      linear-gradient(180deg, rgba(5, 18, 32, 0.98) 0%, rgba(7, 28, 51, 0.9) 58%, rgba(7, 28, 51, 0.38) 100%),
+      url("assets/hero-boardroom.png");
+    background-position: 63% center;
   }
 
   .service-grid,
@@ -1155,6 +1258,10 @@ footer p {
   }
 
   .insight-image {
+    min-height: 380px;
+  }
+
+  .advisory-media {
     min-height: 380px;
   }
 
@@ -1180,12 +1287,17 @@ footer p {
   }
 
   h1 {
-    font-size: 3.15rem;
+    font-size: 2.82rem;
+    line-height: 1;
   }
 
   .hero-inner {
-    min-height: 860px;
+    min-height: 820px;
     padding-top: 86px;
+  }
+
+  .hero-panel {
+    padding: 20px;
   }
 
   .button {
@@ -1214,16 +1326,18 @@ footer p {
 
   .site-header {
     gap: 14px;
+    padding-inline: 16px;
   }
 
   nav {
     gap: 18px;
+    font-size: 0.9rem;
   }
 
   .finance-canvas {
-    inset: auto -18vw 18vh auto;
-    width: 82vw;
-    height: 82vw;
+    inset: auto 0 14vh auto;
+    width: 68vw;
+    height: 68vw;
     opacity: 0.28;
   }
 
@@ -1235,16 +1349,17 @@ footer p {
 
   .css-3d-stage,
   .css-3d-stage.small {
-    min-height: 390px;
+    min-height: 360px;
   }
 
   .dashboard-plane {
-    inset: 0 -18% 0 -18%;
-    transform: rotateX(60deg) rotateZ(-34deg) scale(0.78);
+    inset: 0 -8% 0 -8%;
+    transform: rotateX(60deg) rotateZ(-34deg) scale(0.62);
   }
 
   .glass-panel {
-    width: 200px;
+    width: 184px;
+    min-height: 112px;
   }
 
   .bar-field {
@@ -1253,6 +1368,19 @@ footer p {
 
   .bar-field b {
     width: 30px;
+  }
+
+  .advisory-media {
+    min-height: 310px;
+  }
+
+  .metric-grid strong {
+    font-size: 1.7rem;
+  }
+
+  .contact-panel a,
+  .contact-panel span {
+    overflow-wrap: anywhere;
   }
 }
 
