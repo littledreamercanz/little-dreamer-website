@@ -1,5 +1,14 @@
 # Little Dreamer Ltd Website Versions
 
+## v1.4 - Bilingual Chinese and English website
+
+- Added a full English website under `/en/` with English homepage, services, pricing, credentials, contact and six individual service pages.
+- Added language switch buttons in the top navigation: Chinese pages link to `EN`, and English pages link back to `中文`.
+- Rewrote English content for New Zealand English-speaking clients rather than using direct word-for-word translation.
+- Kept the Chinese website as the default version at the main domain.
+- Updated static asset version numbers to reduce browser cache issues after deployment.
+- Previous production version remains archived as `v1.3` for rollback.
+
 ## v1.3 - Market positioning and conversion content
 
 - Added stronger trust signals: Xero Certified Advisor, MYOB Certified Advisor, CA ANZ, CPA Australia, registered IRD tax agent in New Zealand, and CFO / Finance Manager experience.
