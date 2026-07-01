@@ -10,8 +10,8 @@
     >
     <link rel="preload" href="assets/hero-boardroom.png" as="image">
     <link rel="preload" href="assets/cfo-advisory.png" as="image">
-    <link rel="stylesheet" href="styles.css?v=6">
-    <script type="module" src="script.js?v=6"></script>
+    <link rel="stylesheet" href="styles.css?v=7">
+    <script type="module" src="script.js?v=7"></script>
   </head>
   <body>
     <header class="site-header">
@@ -71,6 +71,8 @@
       </section>
 
       <section class="credential-bar" aria-label="Professional credentials">
+        <span>Xero Certified Advisor</span>
+        <span>MYOB Certified Advisor</span>
         <span>Annual accounts</span>
         <span>Income tax returns</span>
         <span>GST / PAYE / Payroll</span>
@@ -100,13 +102,14 @@
       <section class="section about-grid" id="about">
         <div class="about-copy">
           <p class="section-label">About Harry</p>
-          <h2>不只是报税，也帮你看懂业务数字。</h2>
+          <h2>公司化服务团队，不只是个人报税服务。</h2>
           <p>
-            很多企业需要的不只是年底申报，而是平时就能看清利润、现金流、税务责任和下一步经营决策。
-            Little Dreamer Ltd 把会计合规、税务规划、管理报表和 CFO 级分析放在同一个服务框架里。
+            Little Dreamer Ltd 由公司 directors / partners 负责专业交付。Harry Hu 拥有 Chartered Accountant,
+            CA ANZ (New Zealand and Australia)、CPA Australia、registered IRD tax agent in New Zealand、
+            Xero Certified Advisor 和 MYOB Certified Advisor 背景。
           </p>
           <p>
-            服务适合 small business、contractors、sole traders、rental property investors、
+            服务适合 small business、contractors、sole traders、rental property investors、trusts、
             新公司设立客户，以及需要预算、cash flow forecast 和 management reporting 的成长型公司。
           </p>
         </div>
@@ -114,6 +117,46 @@
           <img src="assets/cfo-advisory.png" alt="CFO advisory cash flow forecast and management reporting dashboard">
           <figcaption>Structured records, clean reporting and practical tax advice.</figcaption>
         </figure>
+      </section>
+
+      <section class="section industry-section">
+        <div class="section-heading">
+          <p class="section-label">Industries We Help</p>
+          <h2>熟悉新西兰中小企业常见行业场景。</h2>
+          <p>不同业务的会计重点不一样。我们按行业理解收入模式、GST、payroll、库存、项目成本和现金流。</p>
+        </div>
+        <div class="industry-grid">
+          <article>
+            <span>Construction & Tradies</span>
+            <h3>建筑、分包、土地分割与项目成本</h3>
+            <p>Job costing、contractor payments、equipment finance、GST cash flow、project margin、land subdivision and build projects.</p>
+          </article>
+          <article>
+            <span>FMCG, Retail & Wholesale</span>
+            <h3>零售、批发、库存和渠道毛利</h3>
+            <p>POS reconciliation、stock movement、supplier payments、debtor control、retail and wholesale margin reporting.</p>
+          </article>
+          <article>
+            <span>Professional Services</span>
+            <h3>移民、投资、legal 与咨询服务</h3>
+            <p>Time-based revenue、trust account style controls, WIP review, professional fee reporting and GST timing.</p>
+          </article>
+          <article>
+            <span>IT & Contractors</span>
+            <h3>IT contractor、项目收入和研发资金</h3>
+            <p>Contractor income, project reporting, R&D style records, Callaghan Innovation funding support and cash flow forecast.</p>
+          </article>
+          <article>
+            <span>International Businesses</span>
+            <h3>海外公司在新西兰开分公司</h3>
+            <p>NZ branch setup, IRD/GST/PAYE registration, intercompany charges, local reporting and bilingual finance communication.</p>
+          </article>
+          <article>
+            <span>Property, Trusts & Payroll</span>
+            <h3>投资房、trust、HR payroll 和雇主合规</h3>
+            <p>Rental property tax returns, trust records, bright-line considerations, payroll review, PAYE filing and employee cost reporting.</p>
+          </article>
+        </div>
       </section>
 
       <section class="section advisory-band">
@@ -177,9 +220,9 @@
 
       <section class="section immersive-3d-section">
         <div class="immersive-copy">
-          <p class="section-label">3D Advisory Dashboard</p>
-          <h2>更明显的动态三维财务仪表盘。</h2>
-          <p>这个区域用纯 CSS 3D 立体层、动态图表和悬浮面板做出高级咨询公司视觉感；即使 Three.js 没加载，也能看到动态 3D 效果。</p>
+          <p class="section-label">Financial Insight Dashboard</p>
+          <h2>把税务、现金流和经营指标放在同一张图里看。</h2>
+          <p>适合需要 monthly management reporting、cash flow forecast、GST / PAYE 付款提醒和 budget vs actual 分析的企业。目标不是只完成申报，而是让老板提前看见利润、税款和现金流压力。</p>
         </div>
         <div class="css-3d-stage" aria-hidden="true">
           <div class="dashboard-plane">
@@ -240,7 +283,7 @@
         <div class="section-heading pricing-heading">
           <p class="section-label">Pricing Structure</p>
           <h2>报价结构</h2>
-          <p>以下为公开起价，用于帮助客户快速判断服务层级。正式报价会根据交易量、历史账务质量、实体数量和复杂度确认，价格默认未含 GST。</p>
+          <p>公开展示 one-off accounting fees、monthly accounting packages 和 CFO advisory 起价，帮助客户快速判断预算。正式报价会根据交易量、历史账务质量、实体数量和复杂度确认，价格默认未含 GST。</p>
         </div>
 
         <div class="pricing-grid">
@@ -354,22 +397,58 @@
 
       <section class="section notes-section">
         <div class="section-heading">
-          <p class="section-label">NZ Tax Notes</p>
-          <h2>新西兰税务常见规则</h2>
-          <p>以下为网站展示用摘要，正式发布前建议按最新 IRD 页面复核。</p>
+          <p class="section-label">NZ Tax FAQ</p>
+          <h2>客户常问的新西兰会计与税务问题</h2>
+          <p>以下为一般信息摘要，具体情况需要按业务结构、交易和 IRD 状态确认。</p>
         </div>
-        <div class="note-grid">
+        <div class="note-grid faq-grid">
           <article>
-            <h3>GST registration</h3>
-            <p>如果 taxable activity 的销售额过去 12 个月达到 $60,000，或预计未来 12 个月达到 $60,000，通常需要注册 GST。</p>
+            <h3>什么时候需要注册 GST？</h3>
+            <p>如果 taxable activity turnover 过去 12 个月达到 $60,000，或预计未来 12 个月达到 $60,000，通常需要注册 GST；如果你已经向客户收 GST，也需要注册。</p>
           </article>
           <article>
-            <h3>Provisional tax</h3>
-            <p>上一年度 residual income tax 超过 $5,000 的纳税人，通常需要在下一税年分期缴纳 provisional tax。</p>
+            <h3>GST return 可以多久报一次？</h3>
+            <p>常见频率包括 monthly、two-monthly 和 six-monthly。适合哪一种取决于 turnover、现金流、记录质量和 IRD 注册选择。</p>
           </article>
           <article>
-            <h3>Tax agent & EOT</h3>
-            <p>Tax agent 可为客户处理申报，并可能适用 extension of time；具体要看 IRD 规则和客户状态。</p>
+            <h3>Provisional tax 是什么？</h3>
+            <p>如果上一年度最终需要补交的 income tax 超过 $5,000，通常下一年需要分期缴纳 provisional tax，而不是年底一次性缴清。</p>
+          </article>
+          <article>
+            <h3>Xero 账很乱可以清理吗？</h3>
+            <p>可以。常见清理包括 chart of accounts、bank reconciliation、GST coding、supplier/customer balances、payroll journals 和历史 open items。</p>
+          </article>
+          <article>
+            <h3>收到 IRD letter 怎么办？</h3>
+            <p>先确认信件类型、期间、税种和 due date。作为 registered IRD tax agent，我们可以协助客户查看 myIR 信息、整理回复材料和沟通下一步。</p>
+          </article>
+          <article>
+            <h3>是否提供 one-off 服务？</h3>
+            <p>提供。包括 annual accounts、tax returns、GST return、Xero setup/cleanup、IRD issue support、cash flow forecast 和 budget preparation。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section case-section">
+        <div class="section-heading">
+          <p class="section-label">Experience Examples</p>
+          <h2>匿名经验案例，正式发布前可替换为真实客户授权内容。</h2>
+        </div>
+        <div class="case-grid">
+          <article>
+            <span>Construction</span>
+            <h3>建筑项目现金流和 GST 压力</h3>
+            <p>帮助建筑类客户整理 Xero 项目分类、contractor payments、GST timing 和 job margin，让老板提前看到税款和项目现金流缺口。</p>
+          </article>
+          <article>
+            <span>FMCG</span>
+            <h3>零售批发库存和毛利报告</h3>
+            <p>围绕 POS、wholesale debtor、stock movement 和 supplier payments 建立月度 review，支持 retail + wholesale 混合业务判断毛利和周转。</p>
+          </article>
+          <article>
+            <span>International branch</span>
+            <h3>海外公司新西兰分支财务设置</h3>
+            <p>支持 NZ entity / branch setup 后的 IRD、GST/PAYE、local bookkeeping、intercompany reporting 和中英文管理层沟通。</p>
           </article>
         </div>
       </section>
@@ -378,20 +457,20 @@
         <div class="section-heading">
           <p class="section-label">Client Experience</p>
           <h2>客户评价示例</h2>
-          <p>以下为占位文案，请在正式上线前替换为真实客户授权评价。</p>
+          <p>以下为匿名占位文案，后续可替换为真实客户授权评价。</p>
         </div>
         <div class="testimonial-grid">
           <blockquote>
-            <p>“Harry 把 GST、工资和年底报税流程整理得很清楚，我们终于能提前看到现金流压力。”</p>
-            <cite>Small business owner, Auckland</cite>
+            <p>“Harry 帮我们把 GST、工资和项目成本整理清楚，现金流压力终于可以提前看到。”</p>
+            <cite>Construction business owner, Auckland</cite>
           </blockquote>
           <blockquote>
-            <p>“不仅是报税，还能解释管理报表背后的业务问题，对我们做预算很有帮助。”</p>
-            <cite>Retail operator, Wellington</cite>
+            <p>“不仅做 tax return，还能解释 management report 背后的业务问题，对预算和采购决策很有帮助。”</p>
+            <cite>FMCG retail and wholesale operator</cite>
           </blockquote>
           <blockquote>
-            <p>“中英文沟通都很顺，IRD 问题处理也很及时。”</p>
-            <cite>Property investor, Christchurch</cite>
+            <p>“中英文沟通都很顺，Xero、IRD 和 payroll 问题处理很及时。”</p>
+            <cite>Professional services client</cite>
           </blockquote>
         </div>
       </section>

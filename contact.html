@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>联系 | Little Dreamer Ltd</title>
     <meta name="description" content="Contact Little Dreamer Ltd for New Zealand accounting, tax and CFO advisory services.">
-    <link rel="stylesheet" href="styles.css?v=6">
-    <script type="module" src="script.js?v=6"></script>
+    <link rel="stylesheet" href="styles.css?v=7">
+    <script type="module" src="script.js?v=7"></script>
   </head>
   <body>
     <header class="site-header">
@@ -40,6 +40,63 @@
             <div><strong>微信咨询</strong><p>扫码添加 Harry 微信咨询。</p></div>
           </div>
         </div>
+      </section>
+      <section class="section inquiry-section">
+        <div class="section-heading">
+          <p class="section-label">Inquiry Form</p>
+          <h2>发送你的业务情况</h2>
+          <p>正式版可以连接 Google Form。当前预览版会用邮件方式生成咨询内容。</p>
+        </div>
+        <form class="inquiry-form" action="mailto:harry.hu@littledreamernzau.com" method="post" enctype="text/plain">
+          <label>
+            <span>姓名</span>
+            <input name="Name" type="text" autocomplete="name" required>
+          </label>
+          <label>
+            <span>邮箱</span>
+            <input name="Email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>电话</span>
+            <input name="Phone" type="tel" autocomplete="tel">
+          </label>
+          <label>
+            <span>业务类型</span>
+            <select name="Business type" required>
+              <option value="">请选择</option>
+              <option>Construction / Tradies</option>
+              <option>FMCG / Retail / Wholesale</option>
+              <option>Professional services: immigration, investment, legal, consulting</option>
+              <option>IT / Contractor / Technology</option>
+              <option>International company / NZ branch</option>
+              <option>Rental property / Trust / Property development</option>
+              <option>Payroll / HR / Employer compliance</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            <span>是否 GST registered</span>
+            <select name="GST registered">
+              <option>Not sure</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </label>
+          <label>
+            <span>是否使用 Xero / MYOB</span>
+            <select name="Accounting software">
+              <option>Not sure / Excel only</option>
+              <option>Xero</option>
+              <option>MYOB</option>
+              <option>Other software</option>
+            </select>
+          </label>
+          <label class="full">
+            <span>想咨询的问题</span>
+            <textarea name="Message" rows="6" placeholder="例如：annual accounts, GST return, payroll, IRD letter, Xero cleanup, cash flow forecast, rental property tax, trust records..."></textarea>
+          </label>
+          <button class="button primary form-button" type="submit">提交咨询</button>
+        </form>
       </section>
     </main>
     <footer><p>© 2026 Little Dreamer Ltd.</p><p>Professional accounting, tax and CFO advisory website.</p></footer>

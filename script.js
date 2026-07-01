@@ -127,7 +127,7 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.14 });
 
-document.querySelectorAll(".service-card, .price-card, .page-link-grid a, .service-detail-grid article, .service-detail-grid a, .process-grid article").forEach((item) => {
+document.querySelectorAll(".service-card, .price-card, .page-link-grid a, .service-detail-grid article, .service-detail-grid a, .process-grid article, .industry-grid article, .case-grid article, .trust-grid article, .faq-grid article").forEach((item) => {
   item.classList.add("reveal-item");
   revealObserver.observe(item);
 });
